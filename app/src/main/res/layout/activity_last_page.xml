@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/genrebackground"
+    tools:context=".last_page">
+   <RelativeLayout
+       android:id="@+id/relative_2"
+       android:layout_width="170sp"
+       android:layout_height="170sp"
+       android:layout_marginTop="10sp"
+       android:layout_centerHorizontal="true"
+       >
+       <com.mikhaellopez.circularprogressbar.CircularProgressBar
+           android:id="@+id/circularProgressBar"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:cpb_background_progressbar_color="#FF0000"
+           app:cpb_background_progressbar_width="10dp"
+           app:cpb_progress_direction="to_right"
+           app:cpb_progressbar_color="#00FF00"
+           app:cpb_progressbar_width="10dp"
+           app:cpb_progress_max="20"
+           app:cpb_progress="10"
+           app:cpb_round_border="false" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/black"
+   android:textSize="22dp"
+    android:layout_centerInParent="true"
+    android:text="15/20"
+    android:id="@+id/result_text"/>
+
+   </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/relative_2"
+        android:layout_marginTop="10dp"
+        android:id="@+id/relative_3"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:id="@+id/movetomain"
+            android:layout_marginEnd="40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/movetomainscreen"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MOVE TO MAIN PAGE"
+                android:textColor="@color/black"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_3"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/relative_4"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:id="@+id/message"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_4"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/relative_5"
+
+
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+
+            android:id="@+id/image"
+            android:src="@drawable/congrats" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:src="@drawable/quiz_img"
+        android:layout_margin="10dp"
+        android:id="@+id/app_img"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_marginTop="20dp"
+        android:hint="USERNAME"
+        android:inputType="textCapWords"
+
+        android:drawableRight="@drawable/ic_baseline_person_24"
+        android:maxLines="1"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/useremail"
+        android:layout_marginTop="10dp"
+        android:hint="USER EMAIL"
+        android:inputType="textEmailAddress|text"
+        android:drawableRight="@drawable/ic_baseline_email_24"
+        android:maxLines="1"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userPassword"
+        android:layout_marginTop="10dp"
+        android:hint="USER PASSWORD"
+        android:inputType="textPassword"
+        android:drawableRight="@drawable/ic_baseline_password_24"
+        android:maxLines="1"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirm_password"
+        android:layout_marginTop="10dp"
+        android:hint="CONFIRM PASSWORD"
+        android:inputType="textVisiblePassword"
+
+        android:maxLines="1"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/age"
+        android:layout_marginTop="10dp"
+        android:hint="AGE"
+
+        android:inputType="number"
+        android:drawableRight="@drawable/ic_baseline_how_to_reg_24"
+        android:maxLines="1"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneno"
+        android:layout_marginTop="10dp"
+        android:hint="PhoneNo"
+        android:layout_marginBottom="25dp"
+        android:inputType="number"
+        android:drawableRight="@drawable/ic_baseline_phone_enabled_24"
+        android:maxLines="1"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/sign_in_button"
+        android:textStyle="bold"
+        android:backgroundTint="@color/purple_200"
+        android:drawableRight="@drawable/ic_baseline_app_registration_24"
+        android:textColor="@color/white"
+
+        />
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+
+
+
+
+</LinearLayout>

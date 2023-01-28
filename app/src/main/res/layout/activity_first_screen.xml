@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/genrebackground"
+    android:orientation="vertical"
+    tools:context=".first_screen">
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LETS PLAY"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        />
+        <ImageView
+            android:layout_margin="25dp"
+           android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/onlineassessmentapp"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#7FFFD4"
+        android:layout_gravity="center"
+        android:layout_margin="25dp"
+        android:text="TAKE ASSESSMENT"
+        android:id="@+id/take_quiz"
+        android:textColor="@color/black"
+        android:textStyle="italic"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#7FFFD4"
+        android:layout_gravity="center"
+        android:text="HISTORY"
+        android:id="@+id/history"
+        android:textColor="@color/black"
+        android:textStyle="italic"/>
+
+
+</LinearLayout>

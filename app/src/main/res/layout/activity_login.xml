@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login"
+    android:gravity="center"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:src="@drawable/quiz_img"
+        android:layout_margin="10dp"
+        android:id="@+id/app_img"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_marginTop="10dp"
+        android:hint="ENTER YOUR NAME"
+        android:inputType="textCapCharacters"
+        android:maxLines="1"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/useremaillogin"
+        android:layout_marginTop="10dp"
+        android:hint="ENTER YOUR EMAIL"
+        android:inputType="textEmailAddress|text"
+        android:drawableRight="@drawable/ic_baseline_email_24"
+        android:maxLines="1"
+
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textColorHint="#B9B8B8"
+        app:passwordToggleEnabled="true">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userPasswordlogin"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="USER PASSWORD"
+        android:inputType="textPassword"
+        android:maxLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:id="@+id/login_button"
+        android:textStyle="bold"
+        android:backgroundTint="@color/purple_200"
+        android:drawableRight="@drawable/ic_baseline_login_24"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+
+        />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:id="@+id/rgs_button"
+        android:textStyle="bold"
+        android:backgroundTint="@color/purple_200"
+        android:drawableRight="@drawable/ic_baseline_app_registration_24"
+        android:textColor="@color/white"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FORGOT PASSWORD"
+        android:id="@+id/forgot_button"
+        android:textStyle="bold"
+        android:backgroundTint="@color/purple_200"
+        android:drawableRight="@drawable/ic_baseline_lock_open_24"
+        android:textColor="@color/white"
+
+        />
+    <ProgressBar
+        android:id="@+id/progressbarlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+</LinearLayout>
